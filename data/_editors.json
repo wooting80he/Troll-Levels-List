@@ -1,27 +1,37 @@
 [
     {
         "role": "owner",
-        "name": "List Owner",
-        "link": "https://www.youtube.com/@Prometheus_Alt"
+        "name": "gm4930",
+        "link": "https://www.youtube.com/@GrandMaster4930"
     },
     {
-        "role": "admin",
-        "name": "List Admin",
-        "link": "https://www.youtube.com/@Prometheus_Alt"
+        "role": "owner",
+        "name": "joaquinim",
+        "link": "https://www.youtube.com/@joaquinim_"
+    },
+    {
+        "role": "owner",
+        "name": "AcruvationGMD",
+        "link": "https://youtube.com/@acruvationgmd?si=Ltf9hHztEdR9V6Ig"
     },
     {
         "role": "helper",
-        "name": "List Helper",
-        "link": "https://www.youtube.com/@Prometheus_Alt"
+        "name": "Infinera",
+        "link": "https://www.youtube.com/@infi9626"
     },
     {
-        "role": "trial",
-        "name": "Trial List Helper",
-        "link": "https://www.youtube.com/@Prometheus_Alt"
+        "role": "helper",
+        "name": "gam",
+        "link": "https://www.youtube.com/@gamree94"
     },
     {
-        "role": "dev",
-        "name": "List Coder",
-        "link": "https://www.youtube.com/@Prometheus_Alt"
+        "role": "helper",
+        "name": "sn0wiscold",
+        "link": "https://www.youtube.com/@sn0wiscold"
+    },
+    {
+        "role": "helper",
+        "name": "tangi",
+        "link": "https://www.youtube.com/@Tangiiness"
     }
 ]
