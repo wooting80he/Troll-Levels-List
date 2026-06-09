@@ -19,3 +19,23 @@ const router = VueRouter.createRouter({
 app.use(router);
 
 app.mount('#app');
+data() {
+    return {
+        showColorMenu: false,
+
+        themeColor: "#77DD77",
+
+        presetColors: [
+            "#ff3b30",
+            "#ff9500",
+            "#ffcc00",
+            "#34c759",
+            "#007aff",
+            "#5856d6",
+            "#af52de",
+            "#ff2d55",
+            "#ffffff",
+            "#000000"
+        ]
+    };
+},
