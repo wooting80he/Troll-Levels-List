@@ -59,24 +59,41 @@
         <img src="/assets/pallete-dark.svg" alt="Theme Picker" />
     </button>
 
-    <div v-if="showColorMenu" class="color-menu">
-        <h4>Theme Color</h4>
+<div class="theme-picker">
+    <button
+        class="nav__icon"
+        @click="showColorMenu = !showColorMenu"
+    >
+        <img src="/assets/pipette.svg" alt="Colors">
+    </button>
+
+    <div v-if="showColorMenu" class="color-modal">
+        <div class="color-modal-header">
+            <h2>Colors</h2>
+
+            <button
+                class="close-btn"
+                @click="showColorMenu = false"
+            >
+                ✕
+            </button>
+        </div>
 
         <input
-            type="range"
-            min="0"
-            max="360"
-            v-model="themeHue"
+            type="color"
+            v-model="themeColor"
             @input="updateThemeColor"
+            class="color-picker"
         />
 
-        <div
-            class="color-preview"
-            :style="{
-                backgroundColor:
-                'hsl(' + themeHue + ', 70%, 55%)'
-            }"
-        ></div>
+        <div class="preset-colors">
+            <button
+                v-for="color in presetColors"
+                :key="color"
+                :style="{ background: color }"
+                @click="setThemeColor(color)"
+            ></button>
+        </div>
     </div>
 </div>
                     <!-- Replace the '#' with your discord server's invite-->
