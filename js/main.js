@@ -39,3 +39,34 @@ data() {
         ]
     };
 },
+methods: {
+    updateThemeColor() {
+        document.documentElement.style.setProperty(
+            "--color-primary",
+            this.themeColor
+        );
+
+        localStorage.setItem(
+            "themeColor",
+            this.themeColor
+        );
+    },
+
+    setThemeColor(color) {
+        this.themeColor = color;
+        this.updateThemeColor();
+    }
+},
+mounted() {
+    const savedColor =
+        localStorage.getItem("themeColor");
+
+    if (savedColor) {
+        this.themeColor = savedColor;
+
+        document.documentElement.style.setProperty(
+            "--color-primary",
+            savedColor
+        );
+    }
+}
