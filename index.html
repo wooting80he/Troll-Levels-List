@@ -51,15 +51,34 @@
                     <span class="type-label-lg">Roulette</span>
                 </router-link>
                 <div class="nav__actions">
-                    <button
-                        class="nav__icon"
-                        @click.prevent="store.toggleDark()"
-                    >
-                        <img
-                            :src="store.dark ? '/assets/light.svg' : '/assets/dark.svg'"
-                            alt=""
-                        />
-                    </button>
+                    <div class="theme-picker">
+    <button
+        class="nav__icon"
+        @click.prevent="showColorMenu = !showColorMenu"
+    >
+        <img src="/assets/dark.svg" alt="Theme Picker" />
+    </button>
+
+    <div v-if="showColorMenu" class="color-menu">
+        <h4>Theme Color</h4>
+
+        <input
+            type="range"
+            min="0"
+            max="360"
+            v-model="themeHue"
+            @input="updateThemeColor"
+        />
+
+        <div
+            class="color-preview"
+            :style="{
+                backgroundColor:
+                'hsl(' + themeHue + ', 70%, 55%)'
+            }"
+        ></div>
+    </div>
+</div>
                     <!-- Replace the '#' with your discord server's invite-->
                     <a class="nav__icon" href="#">
                         <img src="/assets/github.svg" alt="Github Logo" />
