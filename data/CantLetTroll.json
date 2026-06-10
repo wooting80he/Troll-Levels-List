@@ -8,5 +8,11 @@
     "percentToQualify": "100",
     "password": "Free To Copy",
     "records": [
+        {
+            "user": "Williamnobre",
+            "link": "https://youtu.be/Gj4Tbkxxu_I?si=-31bBNMwfttKZfSc",
+            "percent": 100,
+            "hz": 60
+        }
     ]
 }
