@@ -37,7 +37,7 @@
     <body id="app">
         <header :class="{ dark: store.dark }">
             <div class="logo">
-                <h2>Troll List</h2>
+                <h2>GD Troll List</h2>
                 <p>v6.9</p>
             </div>
             <nav class="nav">
@@ -51,59 +51,23 @@
                     <span class="type-label-lg">Roulette</span>
                 </router-link>
                 <div class="nav__actions">
-                    <div class="theme-picker">
-    <button
-        class="nav__icon"
-        @click.prevent="showColorMenu = !showColorMenu"
-    >
-        <img src="/assets/pallete-dark.svg" alt="Theme Picker" />
-    </button>
-
-<div class="theme-picker">
-    <button
-        class="nav__icon"
-        @click="showColorMenu = !showColorMenu"
-    >
-        <img src="/assets/palette.svg" alt="Colors">
-    </button>
-
-    <div v-if="showColorMenu" class="color-modal">
-        <div class="color-modal-header">
-            <h2>Colors</h2>
-
-            <button
-                class="close-btn"
-                @click="showColorMenu = false"
-            >
-                ✕
-            </button>
-        </div>
-
-        <input
-            type="color"
-            v-model="themeColor"
-            @input="updateThemeColor"
-            class="color-picker"
-        />
-
-        <div class="preset-colors">
-            <button
-                v-for="color in presetColors"
-                :key="color"
-                :style="{ background: color }"
-                @click="setThemeColor(color)"
-            ></button>
-        </div>
-    </div>
-</div>
+                    <button
+                        class="nav__icon"
+                        @click.prevent="store.toggleDark()"
+                    >
+                        <img
+                            :src="store.dark ? '/assets/light.svg' : '/assets/dark.svg'"
+                            alt=""
+                        />
+                    </button>
                     <!-- Replace the '#' with your discord server's invite-->
-                    <a class="nav__icon" href="https://github.com/gm4930/Troll-Levels-List/tree/main">
+                    <a class="nav__icon" href="#">
                         <img src="/assets/github.svg" alt="Github Logo" />
                     </a>
                     <!-- List record submission form, add a link to replace the '#' when putting a link to your list submission form-->
                     <a
                         class="nav__cta type-label-lg"
-                        href="https://discord.gg/6p66fKfahA"
+                        href="#"
                         target="_blank"
                         >Discord</a
                     >
