@@ -1,8 +1,8 @@
 [
     {
         "role": "owner",
-        "name": "gm4930",
-        "link": "https://www.youtube.com/@GrandMaster4930"
+        "name": "apollo",
+        "link": "https://www.youtube.com/@apollo"
     },
     {
         "role": "owner",
@@ -11,7 +11,7 @@
     },
     {
         "role": "owner",
-        "name": "Acruvation",
+        "name": "AcruvationGMD",
         "link": "https://youtube.com/@acruvationgmd"
     },
     {
@@ -21,8 +21,8 @@
     },
     {
         "role": "helper",
-        "name": "gam",
-        "link": "https://www.youtube.com/@gamree94"
+        "name": "racoonindisguise",
+        "link": "https://www.youtube.com/@Tyleristrying"
     },
     {
         "role": "helper",
@@ -36,7 +36,7 @@
     },
     {
         "role": "dev",
-        "name": "gm4930",
+        "name": "apollo",
         "link": "https://github.com/gm4930"
     }
 ]
